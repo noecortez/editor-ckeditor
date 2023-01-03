@@ -4,7 +4,6 @@ export default {
   data() {
     return {
       editor: DecoupledEditor,
-      content: '',
       editorData: '<p>Content of the editor.</p>',
       editorConfig: {
         // The configuration of the editor
@@ -23,7 +22,9 @@ export default {
 </script>
 
 <template>
-  <ckeditor :editor="editor" v-model="content" :config="editorConfig" @ready="onReady"></ckeditor>
+  <div id="editor">
+    <ckeditor :editor="editor" v-model="editorData" :config="editorConfig" @ready="onReady"></ckeditor>
+  </div>
 </template>
 
 <style scoped>
