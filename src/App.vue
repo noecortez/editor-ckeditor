@@ -6,7 +6,22 @@ export default {
       editor: DecoupledEditor,
       editorData: '<p>Content of the editor.</p>',
       editorConfig: {
-        // The configuration of the editor
+        toolbar: {
+          items: [
+            'findAndReplace', 'selectAll', '|',
+            'heading', '|',
+            'bold', 'italic', 'strikethrough', 'underline', 'code', 'subscript', 'superscript', 'removeFormat', '|',
+            'bulletedList', 'numberedList', 'todoList', '|',
+            'outdent', 'indent', '|',
+            '-',
+            'fontSize', 'fontFamily', 'fontColor', 'fontBackgroundColor', 'highlight', '|',
+            'alignment', '|',
+            'link', 'blockQuote', 'insertTable', 'codeBlock', 'htmlEmbed', '|',
+            'specialCharacters', 'horizontalLine', 'pageBreak', '|',
+            'undo', 'redo',
+            'textPartLanguage'
+          ],
+        }
       }
     }
   },
