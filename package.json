@@ -1,15 +1,16 @@
 {
-  "name": "editor-ckeditor",
-  "version": "0.0.0",
+  "name": "visor-prueba5",
   "private": true,
+  "version": "0.0.0",
+  "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
   "dependencies": {
-    "@ckeditor/ckeditor5-build-decoupled-document": "^35.4.0",
     "@ckeditor/ckeditor5-vue": "^4.0.1",
+    "ckeditor5-custom-build": "file:libs/ckeditor5",
     "vue": "^3.2.45"
   },
   "devDependencies": {
